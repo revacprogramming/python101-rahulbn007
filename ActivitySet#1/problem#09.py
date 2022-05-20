@@ -1,10 +1,10 @@
 # Lists
-list=[]
+lt=[]
 fname = input("Enter file name: ")
 f= open(fname)
 for line in f:
     for i in line.split():
-        if i not in list:
-            list.append(i)
+        if i not in lt:
+            lt.append(i)
 
-print(sorted(list))
+print(sorted(lt))
