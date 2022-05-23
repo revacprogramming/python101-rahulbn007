@@ -5,8 +5,11 @@ def get_cs():
     return s
 
 def cs_to_lot(cs):
-   li=list(cs.split(" "))
-   return li
+   j=[]
+   li=cs.split(";")
+   for r in li:
+     j.append(tuple(r.split("=")))
+   return j
 
 def main():
     cs = get_cs()
