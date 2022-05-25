@@ -1,5 +1,4 @@
 
-
 def get_cs():
   s=str(input("Enter the string: "))
   return s
@@ -12,13 +11,10 @@ def cs_to_lot(cs):
    return j
 
 def lot_to_cs(lot):
-    sr=" "
-    sr= [''.join(i) for i in lot]
-    print(+str(sr))
-    #for a,b in lot:
-    # str+=
-    return sr
-
+    str=" "
+    for a,b in lot:
+     str+=a+'='+b+';'
+    return str[:-1]
 
 def main():
     cs=get_cs()
