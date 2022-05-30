@@ -1,11 +1,11 @@
 # Tuples
 name = input("Enter file:")
 if len(name) < 1:
-     name = "mbox-short.txt"
-h = open(name)
+    name = "mbox-short.txt"
+handle = open(name)
 d={}
-t=[]
-for l in h:
+t=()
+for l in handle:
     if l.startswith('From:'): continue
     if not l.startswith('From'): continue
     index=l.find(':')
@@ -15,7 +15,7 @@ for l in h:
     else:
         d[s]+=1
 
-t = list(d.items())
-t.sort()
-for a,b in t:
+t = tuple(d.items())
+result=sorted(t)
+for a,b in result:
     print(a,b)
