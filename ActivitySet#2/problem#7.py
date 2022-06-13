@@ -8,5 +8,9 @@ class Menu:
   def __str__(self):
     sd=self.my_menu[1:]
     return ("\n".join([str(a+' '+str(b)) for a,b in sd]))
+m = Menu()
 
-  
+m = m + ("idly", 10) + ("vada", 20) + ('dosa',50)
+
+# Hint: operator overloading special methods (__add__, __sub__, etc.)
+print(m)  # should print the menu properly
