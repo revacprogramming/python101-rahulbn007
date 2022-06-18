@@ -6,8 +6,8 @@ class Menu:
     self.my_menu.append((a[0],a[1]))
     return self
   def __str__(self):
-    sd=self.my_menu[1:]
-    return ("\n".join([str(a+' '+str(b)) for a,b in sd]))
+    s=self.my_menu[1:]
+    return ("\n".join([str(a+' '+str(b)) for a,b in s]))
 m = Menu()
 
 m = m + ("idly", 10) + ("vada", 20) + ('dosa',50)
