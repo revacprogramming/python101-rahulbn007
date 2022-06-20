@@ -10,7 +10,8 @@ class Menu:
     return ("\n".join([str(a+' '+str(b)) for a,b in s]))
 m = Menu()
 
-m = m + ("idly", 10) + ("vada", 20) + ('dosa',50)
+m = m + 
+("idly", 10) + ("vada", 20) + ('dosa',50)
 
 # Hint: operator overloading special methods (__add__, __sub__, etc
 print(m)
