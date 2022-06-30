@@ -6,6 +6,7 @@ from urllib.request import urlopen
 url=input('enter the url- ')
 counts=int(input('enter count: '))
 position=int(input('enter position: '))
+
 for i in range(counts):
     count=0
     html=urlopen(url).read()
