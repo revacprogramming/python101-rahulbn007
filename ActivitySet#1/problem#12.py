@@ -1,6 +1,6 @@
 # Regular Expressions
 # https://www.py4e.com/lessons/regex
-  import re
+import re
 hand=input('Enter the file name:')
 handle=open(hand)
 total=0
