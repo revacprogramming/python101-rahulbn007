@@ -1,14 +1,15 @@
 from fractions import Fraction as f
-n = int(input('enter the number of fractions:'))
-fr=[]
+n=int(input())
+d={}
 for i in range(n):
-  fr.append(int(input()))
-
-a=0
-for i in fr:  
-   a+=f(f'1/{i}')
-
-for i in fr:
-  print(f"1/{i} + ", end="")
-  
-print(f"1/{i}",'=',a )
+  f1=0
+  s=''
+  m=int(input())
+  l=input().split()
+  for j in range(m):
+      f1+=f(f'1/{l[j]}')
+  for k in l:
+    s+=f'1/{k} + '
+  d[s[:-3]]=f1
+for a,b in d.items():
+  print(f'{a} = {b}')
